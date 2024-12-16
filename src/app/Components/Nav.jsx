@@ -29,7 +29,7 @@ const Nav = () => {
 
         }
       </div>
-      <div className={`absolute  ${viewMenu ? "top-full" : "bottom-full"} left-0 w-full h-fit items-center justify-center gap-5 lg:hidden  flex flex-col text-[10px] font-bold uppercase p-5 border z-40`}>
+      <div className={`absolute  ${viewMenu ? "top-full" : "bottom-full"} left-0 w-full h-fit items-center justify-center gap-5 lg:hidden  flex flex-col text-[10px] font-bold uppercase p-5 border z-40 bg-light_clr`}>
         <Link href={"/"} className='hover:text-light_clr2 transition-all'>Home</Link>
         <Link href={"#"} className='hover:text-light_clr2 transition-all'>Designs</Link>
         <Link href={"#"} className='hover:text-light_clr2 transition-all'>Contact</Link>
