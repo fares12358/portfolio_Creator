@@ -9,7 +9,7 @@ const Nav = () => {
     setViewMenu(!viewMenu);
   }
   return (
-    <div className='h-[70px] w-full flex items-center justify-between px-5 relative  border-b border-gray-300'>
+    <div className='h-[70px] w-full flex items-center justify-between px-5 relative  border-b border-gray-300 z-50'>
       <div className="w-full h-full flex items-center justify-between gap-10">
         <div className="logo font-bold md:text-lg text-md uppercase text-dark_clr">portfolio<span className='text-light_clr2'>.fm</span></div>
         <div className="items-center justify-center gap-10 hidden lg:flex text-[13px] font-bold uppercase w-fit px-5">
@@ -29,7 +29,7 @@ const Nav = () => {
 
         }
       </div>
-      <div className={`absolute  ${viewMenu ? "top-full" : "bottom-full"} left-0 w-full h-fit items-center justify-center gap-5 lg:hidden  flex flex-col text-[10px] font-bold uppercase p-5 border`}>
+      <div className={`absolute  ${viewMenu ? "top-full" : "bottom-full"} left-0 w-full h-fit items-center justify-center gap-5 lg:hidden  flex flex-col text-[10px] font-bold uppercase p-5 border z-40`}>
         <Link href={"/"} className='hover:text-light_clr2 transition-all'>Home</Link>
         <Link href={"#"} className='hover:text-light_clr2 transition-all'>Designs</Link>
         <Link href={"#"} className='hover:text-light_clr2 transition-all'>Contact</Link>
